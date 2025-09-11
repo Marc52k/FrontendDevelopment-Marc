@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+ Marc Overduijn
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw blauw 
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  responsive
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  Maha-Amsterdam - https://www.maha-amsterdam.com/?gad_source=1&gad_campaignid=21875110769&gbraid=0AAAAAC9CKAGlHC8l8mHeoAqvrXX5XwDtQ&gclid=EAIaIQobChMI8oyr6KPQjwMVdpKDBx3AHSowEAAYASAAEgKs5vD_BwE
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Maha Amsterdam - klein scherm  
+  <img src="readme-images/Mobile.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Maha-Amsterdam - Groot scherm 
+  <img src="readme-images/desktop.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -57,6 +57,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  Van groot naar klein veranderd de navigatie naar een hamburger menu. 
 
 </details>
 
