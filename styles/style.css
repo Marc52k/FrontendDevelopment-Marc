@@ -31,38 +31,55 @@
 
 body{ 
 	font-family: Arial, Helvetica, sans-serif;
-	display: flex;
 	
-}
-nav li:nth-of-type(1) {
-color: red;
-}
-nav {
-	background:rgb(255, 255, 255);
-	display: flex;
-	padding: 1em ;
 	
-}
-img {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 10%
 }
 
-nav li  {
+nav {
+	background:rgb(255, 255, 255);
+	gap: 1em ;
+	
+}
+li img {
+	height: auto;
+	width: 80%
+}
+
+nav ul  {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	
-}
-a {
-	text-decoration: none;
 	gap: 1em;
+	list-style: none;
+}
+nav a {
+	text-decoration: none;
+	color: black;
 }
 
 nav p {
 display: flex;
 align-items: center;
 justify-content: space-between;
+}
+
+ul li:nth-of-type(10) {
+	background: none;
+	border: solid;
+	border-radius: 1em;
+	padding-right:10em;
+	padding-left: 1em;
+	color: gray;
+
+	}
+
+ul li:nth-of-type(1){
+	color: red;
+}
+
+main img{
+	width: 100%;
+}
+main {
+	display: flex;
 }
