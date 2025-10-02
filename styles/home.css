@@ -1,0 +1,223 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+main {
+	display: grid;
+	gap: 2em;
+	width: 100%;
+}
+
+main > section:first-of-type {
+	position: relative;
+	text-align: center;
+	color: #fff;
+}
+
+
+main > section:first-of-type img {
+	width: 100%;
+	height: 50vh;
+	object-fit: cover;
+}
+
+main > section:first-of-type {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+main > section:first-of-type img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main > section:first-of-type h2,
+main > section:first-of-type a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;   /* zodat de tekst zichtbaar blijft */
+}
+
+
+main > section:first-of-type h2 {
+	top: 12rem;
+	font-size: 1.5rem;
+}
+
+main > section:first-of-type a {
+	top: 20rem;
+	background: #111;
+	color: #fff;
+	padding: 1em 2em;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+main > section:nth-of-type(2) ul {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+	align-items: start;
+	flex-direction: column;
+	padding:0;
+}	
+
+/* https://www.youtube.com/watch?v=rg7Fvvl3taU - Kevinpowell aka goat*/ 
+main > section:nth-of-type(2) li a {
+	position: relative;
+	display: grid;
+	text-decoration: none;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto auto auto 1fr;
+	max-width: 40rem;
+	gap: 0.5em;
+	align-items: center;
+	flex-wrap: wrap;
+}
+main a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+main > section:nth-of-type(2) li a img {
+	grid-row: 1/-1;
+	object-fit: cover;
+	aspect-ratio: 34/23;
+	max-width: 8rem;
+}
+
+
+main > section:nth-of-type(2) li a p:nth-of-type(3) {
+	grid-row: 3/3;
+}
+/* dankjewel geis */
+main > section:nth-of-type(2) li a p:first-of-type {
+	position: absolute;
+	background-color: #a1ad96;
+	color: white;
+	left: 5px;
+	top: 5px;
+	margin: 0;
+	font-size: 0.5625rem;
+	padding: 0.25rem;
+	text-transform: uppercase;
+}
+
+main > section:nth-of-type(2) li:first-of-type a p:first-of-type {
+	top: 10px;
+}
+
+
+main > section:nth-of-type(2) li a h4 {
+	margin: 0 0 0.25em 0;
+	font-size: 1rem;
+	text-align: left;
+}
+
+main > section:nth-of-type(2) li a p:not(:first-of-type) {
+	margin: 0;
+	font-size: 0.9rem;
+	color: #555;
+	text-align: left;
+}
+
+/*journal*/
+main > section:nth-of-type(3) a {
+    max-width: 20rem;
+    text-decoration: none;
+	color: #111;
+    gap: 0,5em;	
+}
+
+main > section:nth-of-type(3) img {
+    max-width: 100%;   
+	gap: 1em;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 40em)  {
+
+	
+	main > section:first-of-type h2 {
+	  top: 18rem;
+	  font-size: 2rem;
+	}
+  
+	main > section:first-of-type a {
+	  top: 25rem;
+	  font-size: 1.2rem;
+	}
+  
+	
+	main > section:nth-of-type(2) ul {
+	  display: grid;
+	  grid-template-columns: repeat(2), (1fr);
+	  gap: 2em;
+	}
+  
+	
+	main > section:nth-of-type(3) {
+	  display: grid;
+	  grid-template-columns: repeat(3, 1fr);
+	  gap: 2em;
+	}
+  }
+
+  @media (prefers-color-scheme: dark) {
+	
+	a {
+	  color: #a1d6ff;
+	}
+  
+	
+	main > section:first-of-type a {
+	  background-color: #eee;
+	  color: #111;
+	}
+  
+	
+	main > section:nth-of-type(3) a {
+	  color: #eee;
+	}
+  
+	main > section:nth-of-type(2) li a {
+	  background-color: #1a1a1a;
+	  color: #eee;
+	}
+  
+	main > section:nth-of-type(2) li a p:not(:first-of-type),
+	main > section:nth-of-type(2) li a h4 {
+	  color: #ccc;
+	}
+  
+	main > section:nth-of-type(2) li a p:first-of-type {
+	  background-color: #444;
+	}
+  }
+	
+	
+
+
+

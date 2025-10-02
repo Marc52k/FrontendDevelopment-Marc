@@ -1,0 +1,88 @@
+main > section:first-of-type {
+    display: flex;
+    gap: 0.75em;             
+    overflow-x: auto;        
+      
+  }
+  
+  /* de afbeeldingen zelf */
+  main > section:first-of-type > img {
+    flex: 0 0 auto;           
+    width: 80vw;              
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.3em;
+  }
+  
+  /* schoenen */
+  main > section:last-of-type {
+    display: grid;
+    gap: 1em;
+    align-content: start;
+  }
+  
+  main > section:last-of-type h1 {
+    font-size: 1.25rem;
+  }
+  
+  main > section:last-of-type p {
+    font-size: 1rem;
+  }
+  
+  /* maat */
+  main > section:last-of-type ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;                   
+    margin: 0;    
+  }
+  
+  main > section:last-of-type ul a {
+    display: inline-flex;     
+    height: 3em;  
+    width: 3em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.1em;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+  }
+  main > section:last-of-type ul a:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+  }
+  
+  /* winkelknop */
+  main > section:last-of-type p a {
+    display: inline-block;
+    padding: 0.7em 1em;
+    border-radius: 0.1em;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  
+  
+  main > section:last-of-type p a:last-of-type {
+    border: 0.1em solid #ccc;
+    background: white;
+    color: black;
+  }
+  main > section:last-of-type p a:last-of-type:hover{
+    border: 0.1em solid #ccc;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+  }
+
+  
+  main > section:nth-of-type(2) p:nth-of-type(4) a {
+    color: rgb(0, 0, 0);       
+    text-decoration: underline;
+    font-size: 0.8rem;
+  }

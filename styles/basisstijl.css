@@ -1,0 +1,164 @@
+
+
+body {
+    font-family: sans-serif;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 2em 1fr 3em; 
+    align-items: center;
+    gap: em;
+    height: 5em;
+    position: relative;
+    background: #fff;
+  }
+  
+  /* Logo  */
+  header img:nth-of-type(1) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 5em;
+
+    height: auto;
+  }
+  
+  /* SVG */
+  header img:nth-of-type(2) {
+    max-width: 3em;
+    height: auto;
+    justify-self: end;
+    display: block;
+  }
+  
+  /* Hamburger dankjewel chat */
+  header a:first-of-type {
+    font-size: 2em;
+    gap: 2em;
+    text-decoration: none;
+    color: #111;
+    display: block;
+    justify-self: start;
+  }
+  
+  header nav,
+  header input,
+  header a[href="#"]:not(:first-of-type) {
+    display: none;
+  }
+  
+  @media (min-width: 45em) {
+    header {
+      grid-template-columns: 1fr 1fr auto auto auto; 
+      gap: 2em;
+      height: 6em;
+      align-items: center;
+    }
+  
+    
+    
+    header img:nth-of-type(2) {
+      display: none;
+    }
+
+    header > a:first-of-type{
+        display:none;
+    }
+
+    header a:first-of-type {
+        font-size: 0.45em;
+        justify-self: start;
+      text-decoration: none; 
+    }
+    nav ul li:nth-child(6) a {
+        color: red;
+      }
+
+    /* Logo  */
+    header img:nth-of-type(1) {
+      position: block;
+      transform: none;
+      max-width: 5em;
+      justify-self: center;
+    }
+  
+    /* Nav-items */
+    header nav {
+      display: grid;
+      justify-self: start;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: grid !important;
+      grid-auto-flow: column;
+      gap: 1.5em;
+      font-size: 2em;
+      
+    }
+
+    header nav ul:nth-child(2) {
+      text-decoration: none;
+      color: #000000;
+      font-size: 5em; 
+    }
+    header nav li {
+        display: inline-block;
+        
+    }
+  
+    /* Search  */
+    header input[type="text"] {
+      border: none;
+      border-bottom: 0.1em solid #ccc;
+      color: #999;
+      width: 10em;
+      display: inline-block;
+      font-size: 0.9em;
+      justify-self: end;
+    }
+  
+    /* Account  Cart rechts *//* chat */
+    header a[href="#"]:not(:first-of-type) {
+      display: inline-block;
+      font-size: 0.9em;
+      text-decoration: none;
+      color: #111;
+      justify-self: end;
+    }
+  }
+  footer {
+    background: #222;
+    color: #eee;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 1em;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: grid;
+    gap: 0.5em;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #eee;
+  }
+
+  @media (prefers-color-scheme: dark) {
+	
+	body {
+	  background-color: #111;
+	  color: #eee;
+	}
+	header, footer {
+	  background-color: #000;
+	  color: #fff;
+	}
+    header, img{
+        background-color: #111;
+	  color: #eee;
+	}
+}
