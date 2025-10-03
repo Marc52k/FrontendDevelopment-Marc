@@ -56,7 +56,7 @@ main > section:first-of-type a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: white;   /* zodat de tekst zichtbaar blijft */
+  color: white;
 }
 
 
